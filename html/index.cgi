@@ -33,7 +33,8 @@ def main
     item[ :body ] += date_new + '<br>'
     bookmark = data.at( '.bookmark_link' )
     bookmark[ 'href' ] = URI_BASE + bookmark[ 'href' ]
-    item[ :body ] += bookmark.to_s
+    item[ :body ] += bookmark.to_s + '<br>'
+    item[ :body ] += data.at( '.latest_episode' ).text + '<br>'
 
     item[ :body ].gsub!( /^[ \t]*/, '' ).gsub!( /[\r\n]*/, '' )
 =begin
