@@ -1,11 +1,11 @@
-# nicomanga_feed
+# nicomanga_favfeed
 Generate atom feed from manga favorites of niconico seiga.
 
 ## install
 For Ubuntu 14.04 and Apache
 
     cd /var/www
-    git clone https://github.com/sanadan/nicomanga_feed.git
+    git clone https://github.com/sanadan/nicomanga_favfeed.git
     cd nicomanga_feed
     ./setup
 
